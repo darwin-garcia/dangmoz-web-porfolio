@@ -3,12 +3,12 @@ import Link from 'next/link';
 import { BsPersonBoundingBox, BsHeartFill } from 'react-icons/bs';
 import { FaClipboardList, FaChartBar } from 'react-icons/fa';
 // 1. Eliminamos las importaciones de los componentes que no se usan aquí.
-import About from '@/app/about/page';
+
 // 2. Definimos las rutas como cadenas de texto (strings).
-const resumePath = './resume';
-const bioPath = './bio';
-const hobbiePath = './hobbie';
-const skillPath = './skill';
+const resumePath = '/about/items/resume';
+const bioPath = '/about/items/bio';
+const hobbiePath = '/about/items/hobbie';
+const skillPath = '/about/items/skill';
 
 const AboutNav = () => {
   return (

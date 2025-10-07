@@ -1,10 +1,5 @@
 import AboutCard from "./card";
-import AboutResume from "./items/resume";
-import AboutBio from "./items/bio";
-import AboutHobbie from "./items/hobbie";
-import AboutSkill from "./items/skill";
-
-
+import AboutResume from "./items/resume/resume";
 
 export default function About() {
   return (

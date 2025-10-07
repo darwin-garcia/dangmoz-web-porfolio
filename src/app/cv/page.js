@@ -45,9 +45,9 @@ export default function CVPage() {
           {/* Sección habilidades en la columna izquierda */}
           <section className="mt-10">
             <ul>
-              <li><FontAwesomeIcon icon = {faWhatsapp} className="text-sm" /> 3104600220</li>
-              <li><FontAwesomeIcon icon = {faEnvelope} className="text-sm" /> darwin_garcia@me.com</li>
-              <li><FontAwesomeIcon icon = {faMapPin} className="text-sm" /> Bogota (Colombia)</li>
+              <li><FontAwesomeIcon icon = {faWhatsapp} className="text-md" /> 3104600220</li>
+              <li><FontAwesomeIcon icon = {faEnvelope} className="text-md" /> darwin_garcia@me.com</li>
+              <li><FontAwesomeIcon icon = {faMapPin} className="text-md" /> Bogota (Colombia)</li>
             </ul>
           </section>
           {/* Sección habilidades en la columna izquierda */}
@@ -96,7 +96,7 @@ export default function CVPage() {
             </h2>
             <div className="space-y-6">
               <p>
-                Hola!
+                Passionate about storytelling and create new data solutions that generate tangile impact and value. Excellent command of tools such as Python and SQL, with a clear goal of developing advances Machine Learning models that impove decision-making.
               </p>
             </div>
           </section>
@@ -110,16 +110,9 @@ export default function CVPage() {
                 <h3 className="text-xl font-bold">Data Scientist</h3>
                 <p className="text-gray-500">Adeodato | 2025 - Current</p>
                 <p className="mt-2">
-                  Data Professional CEO and Leader.
+                  Data Professional CEO and Consultant Leader.
                 </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">Data Analyst</h3>
-                <p className="text-gray-500">Startup X | 2023 - 2025</p>
-                <p className="mt-2">
-                  Training Models and EDA
-                </p>
-              </div>
+              </div>              
             </div>
           </section>
           {/* Sección educación */}
@@ -127,14 +120,16 @@ export default function CVPage() {
             <h2 className="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">
               Education
             </h2>
-            <ul className="list-disc list-inside space-y-2">
-              <li>
-                <strong>Data Science Professional Degree</strong> – IBM (2025)
-              </li>
-              <li>
-                <strong>Frontend Developer</strong> – Oracle Next Education (2022)
-              </li>
-            </ul>
+            <div className="space-y-6">
+              <ul className="list-none list-inside space-y-2">
+                <li>
+                  <strong>Data Science Professional Degree</strong> – IBM (2025)
+                </li>
+                <li>
+                  <strong>Frontend Developer</strong> – Oracle Next Education (2022)
+                </li>
+              </ul>
+            </div>            
           </section>
           {/* Sección Proyectos */}
           <section className="mb-10">
@@ -142,19 +137,19 @@ export default function CVPage() {
               Projects
             </h2>
             <div className="space-y-6">
-              <ul className="list-disc list-inside space-y-2">
+              <ul className="list-none list-inside space-y-4">
                 <li>
-                  <h3 className="text-xl">SpaceY</h3>
+                  <h3 className="text-xl">SpaceY Starship</h3>
                   <p className="text-gray-500">IBM Data Science | September 2025</p>
                   <p className="mt-2">
-                    Desarrollo de aplicaciones web modernas con React, Next.js y APIs en Node.js.
+                    Aerospatial agence. Predict landing outcomes and its possible coordinates. Machine Learning techniques implementation to achieve succesful results with accuracy ratio score.
                   </p>
                 </li>
                 <li>
-                  <h3 className="text-xl">Laptop Prices</h3>
-                  <p className="text-gray-500">IBM Data Science | 2025</p>
+                  <h3 className="text-xl">Laptop Sales</h3>
+                  <p className="text-gray-500">Independent | 2025</p>
                   <p className="mt-2">
-                    Implementación de interfaces responsivas con TailwindCSS y consumo de REST APIs.
+                    Laptop sales prediction based on relevant features and cost/benefit ratio for end-user. Machine Learning implementation to determine the fall in sales.
                   </p>
                 </li>
               </ul>

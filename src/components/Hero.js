@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Typewriter from "typewriter-effect"
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faBook} from "@fortawesome/free-solid-svg-icons";
 import ParticleCanvas from "./ParticleCanvas";
 
 const ImgUser = '/images/profile/Profile1.jpg'
@@ -55,7 +55,7 @@ export default function Hero() {
             </div>
             <div>
                 <a href="/cv" className="bg-blue-500 text-gray-800 dark:text-white font-bold py-2 px-4 rounded inline-flex items-center border border-blue-100 hover:bg-green-600 transition duration-200">
-                    <FontAwesomeIcon icon = {faDownload} className="text-xl" /> Read More.
+                    <FontAwesomeIcon icon = {faBook} className="text-xl" /> Read More.
                 </a>
             </div>   
         </div>

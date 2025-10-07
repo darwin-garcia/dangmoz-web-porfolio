@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'CV de Darwin García',
-  description: 'Mi Curriculum Vitae profesional',
+  title: '| Darwin García | CV',
+  description: 'Professional Curriculum Vitae',
 };
 
 export default function CVLayout({ children }) {

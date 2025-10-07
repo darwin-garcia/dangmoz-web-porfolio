@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "| Darwin Garcia| Portafolio",
+  title: "| Darwin Garcia | Portfolio",
   description: "Data Scientist and Frontend Developer Portfolio.",
   keywords: 'Data Science, Portfolio, Photographer, PC Builder, YouTuber, Developer, Next.js, React, Tailwind CSS',
 };

@@ -11,13 +11,13 @@ export default function AboutResume() {
   return (
     <div>
         <Carousel/>
-        <h3 className='pt-2 pb-2 text-2xl text-black dark:text-white'> Hello! I am Darwin Garcia</h3>
+        <h3 className="pt-2 pb-2 text-2xl text-black dark:text-white"> Hello! I am Darwin Garcia</h3>
         <p>Welcome to my site!. </p>
         <p>👷‍♂️ I am a creative, organised and self-taught person, I usually research topics of interest, study them and put them into practice. I like to solve problems through data, using tools to obtain information with a focus on results. 
         I seek to make an impact with resolution, I have interpersonal skills with clients and teams as the main skill that makes the difference for a good working relationship and understanding the business.</p>
         <p>I am looking for opportunities to be part of an IT team in a company where I can grow professionally and contribute with my acquired skills.</p>
         <p>🙌 Thank you for visiting my profile!</p>        
-        <div className='grid justify-center pt-3 pb-3'>
+        <div className="grid justify-center pt-3 pb-3">
             <a href="https://drive.google.com/file/d/1pDgw9jBR-dFZXHsJk-RF3UzBHQ7t_UNc/view?usp=sharing" className="bg-blue-500 text-gray-800 dark:text-white font-bold py-2 px-4 rounded inline-flex items-center border border-blue-300 no-underline hover:bg-red-600 transition duration-200 hover:underline">
               <FontAwesomeIcon icon={faDownload} className="h-6 w-6" />
               <span>Download Resume</span>
@@ -35,11 +35,11 @@ export default function AboutResume() {
                       objectFit='contain' 
                       className='transition ease-in-out delay-150 hover:-translate-y-1 -inset-1 hover:scale-125 duration-300'/>
                 </div>
-              <div className='mt-1'>
+              <div className="mt-1">
                 <h3 className="text-blue-800 dark:text-blue-100 font-bold hover:text-cyan-600 duration-300">Experience</h3>
               </div>
             </div>  
-            <div className='border-t-2'/>
+            <div className="border-t-2"/>
             <p className="text-gray-500 dark:text-gray-300">1 Year as Junior Data Scientist</p>
           </div>
 

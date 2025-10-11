@@ -17,7 +17,7 @@ export default function EducationSection() {
                     <div className='space-y-3 xl:col-span-3'>
                         <div>
                             <h3 className='text-2xl font-bold leading-8 tracking-tight'>
-                                <a className='text-gray-900 dark:text-gray-100' href='/'>Data Scientist</a>
+                                <a className='text-gray-900 dark:text-gray-100'>Data Scientist</a>
                             </h3>
                             <div className='flex flex-wrap'>
                                 <a className='mr-3 text-sm font-medium text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-gray-600 dark:text-gray-400'>IBM</a>
@@ -52,7 +52,7 @@ export default function EducationSection() {
                     <div className='space-y-3 xl:col-span-3'>
                         <div>
                             <h3 className='text-2xl font-bold leading-8 tracking-tight'>
-                                <a className='text-gray-900 dark:text-gray-100' href='/'>Frontend Developer</a>
+                                <a className='text-gray-900 dark:text-gray-100' >Frontend Developer</a>
                             </h3>
                             <div className='flex flex-wrap'>
                                 <a className='mr-3 text-sm font-medium text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-gray-600 dark:text-gray-400'>Oracle Next Education</a>

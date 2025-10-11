@@ -12,7 +12,7 @@ export default function ProjectItem2() {
     <article className="bg-white flex flex-col max-w-lg mx-auto rounded-lg shadow-xl dark:bg-gray-700 mb-5 align-middle hover:scale-110 transition duration-300 ease-in-out ">
             {/* 2. El contenedor ahora es 'relative' y tiene 'aspect-square' para la relación 1:1 */}
             <div className="relative w-full aspect-square opacity-50 cursor-pointer filter grayscale hover:grayscale-0 blur-sm hover:blur-none hover:opacity-100 transition duration-300 ease-in-out">
-                <a href="/">
+                <a href="https://github.com/darwin-garcia">
                     {/* 3. Reemplazamos <img> por <Image> con las propiedades correctas */}
                     <Image
                         src={ProjectImg1}

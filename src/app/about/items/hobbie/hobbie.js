@@ -1,8 +1,8 @@
 import Image from 'next/image'
-const HobbieImg1 = "/images/about/estudiar.png"
-const HobbieImg2 = "/images/about/musica.png"
-const HobbieImg3 = "/images/about/tienda.png"
-const HobbieImg4 = "/images/about/photo.png"
+const HobbieImg1 = "/images/about/books.png"
+const HobbieImg2 = "/images/about/music.png"
+const HobbieImg3 = "/images/about/camping.png"
+const HobbieImg4 = "/images/about/sony-camera.png"
 
 export default function AboutHobbie() {
   return (

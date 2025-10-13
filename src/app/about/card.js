@@ -1,7 +1,7 @@
 "use client"; // 👈 ¡Esta es la directiva mágica!
 import React from 'react'
 import Image from 'next/image'
-
+import Link from "next/link";
 import Typewriter from "typewriter-effect"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarAlt, faEnvelope, faDownload} from '@fortawesome/free-solid-svg-icons';
@@ -31,10 +31,10 @@ export default function AboutCard() {
             <a href="https://call.whatsapp.com/voice/eVjRmhsyYb3C4dlMVJJnFF" className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
                 <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0"><FaWhatsapp className='inline-flex items-center'/> Contact Me</span>
             </a>
-            <a href={CVRoute} className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">                              
+            <Link href={CVRoute} download className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">                              
                 <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
                 <FontAwesomeIcon icon={faDownload} className="h-6 w-6" /> Resume </span>
-            </a>
+            </Link>
         </div>
 
         <div>

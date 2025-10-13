@@ -1,3 +1,4 @@
+
 import { Montserrat } from "next/font/google";
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -23,6 +24,7 @@ export const viewport = {
 }
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       {/* <body className={inter.className}> */}

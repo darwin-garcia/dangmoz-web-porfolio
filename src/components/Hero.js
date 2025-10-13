@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import { useState } from 'react';
 import Typewriter from "typewriter-effect"
 import Image from "next/image";
@@ -54,9 +55,9 @@ export default function Hero() {
                 <p>👨‍💻 Here begins my story. </p>                
             </div>
             <div>
-                <a href="/cv" className="bg-blue-500 text-gray-800 dark:text-white font-bold py-2 px-4 rounded inline-flex items-center border border-blue-100 hover:bg-green-600 transition duration-200">
+                <Link href="/cv" className="bg-blue-500 text-gray-800 dark:text-white font-bold py-2 px-4 rounded inline-flex items-center border border-blue-100 hover:bg-green-600 transition duration-200">
                     <FontAwesomeIcon icon = {faBook} className="text-xl" /> Read More.
-                </a>
+                </Link>
             </div>   
         </div>
     </div>

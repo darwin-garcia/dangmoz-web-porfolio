@@ -29,15 +29,15 @@ export default function AboutBio() {
         </ul>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-fit justify-center">
 
-            <div className="flex flex-col max-w-lg mx-auto items-center justify-between px-4 py-4"> 
+            <div className="flex flex-col min-h-64 max-w-lg mx-auto items-center justify-between px-4 py-4"> 
                 <div className='mx-auto w-24 h-24 relative md:h-16 md:w-16 '>
                     <Image src={ProfileImg} 
                     layout='fill' 
                     alt="Developer-Image"
                     objectFit='contain'/>
                 </div>               
-                <h2 className="text-lg font-semibold text-gray-900 dark:text-white"><FaUser className='inline-flex items-center mx-0.5'/>Facts about me.</h2>
-                <ul className="justify-center max-w-md px-0 mx-0 list-none text-gray-600 dark:text-gray-300 min-w-full">
+                <h2 className="text-lg font-semibold text-gray-900 dark:text-white"><FaUser className='inline-flex items-center mx-0.5'/> More Facts about me.</h2>
+                <ul className="justify-center max-w-md pb-2 px-0 mx-0 list-none text-gray-600 dark:text-gray-300 min-w-full">
                     <li>🎂 March 15 / 1991 </li>
                     <li>📌 Bogotá D.C. </li>
                     <li>🥇 English B2 </li>
@@ -45,25 +45,25 @@ export default function AboutBio() {
                 </ul>
             </div>
 
-            <div className="flex flex-col max-w-lg mx-auto items-center justify-between px-4 py-4"> 
+            <div className="flex flex-col min-h-64 max-w-lg mx-auto items-center justify-between px-4 py-4"> 
                 <div className='mx-auto w-24 h-24 relative md:h-16 md:w-16 '>
                     <Image src={DevelopImg} 
                     layout='fill' 
                     alt="Developer-Image"
                     objectFit='contain'/>
                 </div>   
-                <h2 className="text-lg font-semibold text-gray-900 dark:text-white"><FaCode className='inline-flex items-center mx-0.5'/>Data Scientist</h2>
+                <h2 className="text-lg font-semibold text-gray-900 dark:text-white"><FaCode className='inline-flex items-center mx-0.5'/> Data Scientist</h2>
                 <p>From 2025 to the present, I do projects related to information and data.</p>
             </div>
 
-            <div className="flex flex-col max-w-lg mx-auto items-center justify-between px-4 py-4">
+            <div className="flex flex-col min-h-64 max-w-lg mx-auto items-center justify-between px-4 py-4">
                 <div className='mx-auto w-24 h-24 relative md:h-16 md:w-16 '>
                     <Image src={PCImg} 
                     layout='fill' 
                     alt="PC-Image"
                     objectFit='contain'/>
                 </div>    
-                <h2 className="text-lg font-semibold text-gray-900 dark:text-white"><FaTools className='inline-flex items-center mx-0.5'/>PC Builder</h2>
+                <h2 className="text-lg font-semibold text-gray-900 dark:text-white"><FaTools className='inline-flex items-center mx-0.5'/> PC Builder</h2>
                 <p>PC and Laptop Technical Support and technology salesman. 7 years as a freelancer</p>
             </div>
         </div>

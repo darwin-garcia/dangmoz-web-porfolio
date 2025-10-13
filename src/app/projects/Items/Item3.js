@@ -5,7 +5,7 @@ import Image from 'next/image'
 // 👇 1. Importa los iconos desde tu nuevo componente cliente
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaJava, FaReact, SiArchlinux, SiApple, SiGit, SiMysql, SiPycharm, SiScilab, SiSpringboot, SiTailwindcss, SiTableau, SiScipy, SiDjango, SiFlask, SiPostgresql,  SiPandas, SiNumpy, SiJupyter, SiPlotly, SiPython, SiPytest, SiTensorflow, SiGeopandas,  SiPytorch } from '@/components/Icon';
 
-const ProjectImg1 = '/images/projects/brand.jpg'
+const ProjectImg1 = '/images/projects/Item2.png'
 
 export default function ProjectItem3() {
   return (

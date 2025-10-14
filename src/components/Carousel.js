@@ -27,8 +27,8 @@ const Carousel = () => {
 
     // useEffect para el cambio automático de imágenes
     useEffect(() => {
-        // Establece un intervalo que llama a nextImage cada 5 segundos
-        const interval = setInterval(nextImage, 5000);
+        // Establece un intervalo que llama a nextImage cada 8 segundos
+        const interval = setInterval(nextImage, 8000);
         // Limpia el intervalo cuando el componente se desmonta para evitar fugas de memoria
         return () => clearInterval(interval);
     }, []); // El array vacío asegura que el efecto solo se ejecute una vez (al montar el componente)

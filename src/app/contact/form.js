@@ -1,8 +1,9 @@
 "use client"
-
+// 1. Importa el componente principal
 import React, { useState } from 'react';
+// 2. Importa los íconos que necesitas
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons'; // Ícono de sobre
+import { faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons'; // Íconos solidos generico
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'; // Íconos de marcas
 import Typewriter from "typewriter-effect";
 
@@ -27,7 +28,7 @@ const ContactForm = () => {
         </div>
         <div className="p-8">
                         
-            <h1 className="text-6xl text-white font-medium mb-2">
+            <h1 className="text-6xl text-black dark:text-white font-medium mb-2">
                 Contact Me.<span className="text-blue-300">.</span>
             </h1>
                         

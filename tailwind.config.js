@@ -4,6 +4,10 @@ module.exports = {
     "./src/app/**/*.{js,jsx}",
     "./src/components/**/*.{js,jsx}",
   ],
+  darkMode: 'media', // o 'class'
+  content: [
+    // ...tus rutas de archivos
+  ],  
   theme: {
     extend: {
       fontFamily: {
@@ -27,4 +31,5 @@ module.exports = {
     },
   },
   plugins: [],
+  
 };

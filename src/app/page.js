@@ -1,4 +1,4 @@
-'use client';
+'use client'; // 👈 Directiva necesaria para usar hooks de React
 import Head from 'next/head'; // 👈 PASO 1: Importa el componente Head
 import { useState, useEffect } from 'react';
 import Hero from "@/components/Hero";

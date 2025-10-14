@@ -1,4 +1,4 @@
-'use client'; // Directiva necesaria para usar hooks de React como useState
+'use client'; // 👈 Directiva necesaria para usar hooks de React 
 import React from 'react'
 import {BsGlobe2, BsGear, BsGeoAltFill, BsTools, BsTerminalFill } from 'react-icons/bs';
 import {DiMongodb, DiMysql} from 'react-icons/di';
@@ -16,8 +16,8 @@ export default function AboutSkill() {
             
                 <h2 className="text-lg font-semibold text-gray-900 dark:text-white"><FaServer className='inline-flex items-center mr-2'/>Library</h2>
                 <p className='pt-2'>Libraries I use in the business environment </p>
-                <div className='min-h-32 flex items-center justify-center'>
-                    <ul className=" text-5xl flex flex-wrap justify-center max-w-md gap-x-2 px-0 mx-0 list-none text-gray-600 dark:text-gray-300 min-w-full">                        
+                <div className='min-h-32 flex items-center justify-center mt-6'>
+                    <ul className="text-5xl flex flex-wrap justify-evenly gap-6 px-0 mx-0 list-none text-gray-600 dark:text-gray-300 min-w-full">                        
                         <li>
                             <SiPython className='hover:text-green-500 transition duration-200'/>
                         </li>
@@ -44,8 +44,8 @@ export default function AboutSkill() {
             
                 <h2 className="text-lg font-semibold text-gray-900 dark:text-white"><BsTools className='inline-flex items-center mr-2'/>Tools</h2>
                 <p className='pt-4'>Other tools I use in Data Science</p>
-                <div className='min-h-32 flex items-center justify-center'>
-                    <ul className=" text-5xl flex flex-wrap justify-center max-w-md gap-x-2 px-0 mx-0 list-none text-gray-600 dark:text-gray-300 min-w-full">
+                <div className='min-h-32 flex items-center justify-center mt-6'>
+                    <ul className="text-5xl flex flex-wrap justify-evenly gap-6 px-0 mx-0 list-none text-gray-600 dark:text-gray-300 min-w-full">
                         <li>
                             <SiDocker className='hover:text-blue-500 transition duration-200'/>
                         </li>

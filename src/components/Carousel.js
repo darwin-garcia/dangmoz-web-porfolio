@@ -1,4 +1,4 @@
-'use client';
+'use client'; // 👈 Directiva necesaria para usar hooks de React
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';

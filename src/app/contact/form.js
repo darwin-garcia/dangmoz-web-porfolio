@@ -1,20 +1,15 @@
-"use client"
-// 1. Importa el componente principal
+"use client"; // 👈 Directiva necesaria para usar hooks de React
 import React, { useState } from 'react';
-// 2. Importa los íconos que necesitas
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons'; // Íconos solidos generico
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'; // Íconos de marcas
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import Typewriter from "typewriter-effect";
 
-// Lista de países para el menú desplegable
 const countries = [
   "Alemania", "Argentina", "Australia", "Austria", "Bélgica", "Belice", "Bolivia", "Brasil", "Canadá", "Chile", "Colombia", "Costa Rica", "Cuba", "Dinamarca", "Ecuador", "El Salvador", "España", "Estados Unidos", "Francia", 
   "Guatemala", "Honduras", "Italia", "Japón", "México", "Nicaragua", "Noruega", "Nueva Zelanda", "Países Bajos", "Panamá", "Paraguay", "Perú", "Polonia", "Portugal", "Reino Unido", "República Dominicana", "Suecia", "Suiza", "Trinidad y Tobago", "Uruguay", "Venezuela",
 ];
 
 const ContactForm = () => {
-  // Estado para manejar la opción de contacto seleccionada
   const [contactMethod, setContactMethod] = useState('');
 
   const handleContactChange = (event) => {
@@ -22,14 +17,10 @@ const ContactForm = () => {
   };
 
   return (
-    <article className="register flex flex-col min-h-screen rounded-lg md:p-8">
-        <div className="p-8 mb-14">
-                        
-        </div>
+    <article className="register flex flex-col rounded-lg">
         <div className="p-8">
-                        
             <h1 className="text-6xl text-black dark:text-white font-medium mb-2">
-                Contact Me.<span className="text-blue-300">.</span>
+                Contact Me<span className="text-blue-300">.</span>
             </h1>
                         
             <div className="text-gray-500 font-medium">
@@ -41,7 +32,6 @@ const ContactForm = () => {
             <div className='mb-4'></div>
 
             <form className="mt-8" action='/'>
-                            
                 <div className="max-w-lg mb-4 flex flex-col md:flex-row items-center justify-between gap-4">
                     <input type="text" autoComplete="off"
                      className="w-full py-3 px-4 rounded-xl outline-none bg-[#343434] text-gray-100 group" placeholder="First Name" />
@@ -50,7 +40,6 @@ const ContactForm = () => {
                      className="w-full py-3 px-4 rounded-xl outline-none bg-[#343434] text-gray-100 group" placeholder="Surname" />
                 </div>
 
-                {/* --- MENÚ DESPLEGABLE DE PAÍSES --- */}
                 <div className="max-w-lg mb-4">
                     <select 
                      className="w-full py-3 px-4 rounded-xl outline-none bg-[#343434] text-gray-100 group"
@@ -78,8 +67,9 @@ const ContactForm = () => {
                     </p>                                
                 </div>
                 
-                {/* --- RADIO BUTTONS PARA MÉTODO DE CONTACTO --- */}
-                <div className="max-w-lg mb-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-gray-300">
+                {/* --- SECCIÓN MODIFICADA DE RADIO BUTTONS --- */}
+                {/* Cambiamos 'grid grid-cols-2' por 'flex flex-col' para apilarlos verticalmente */}
+                <div className="max-w-lg mb-4 flex flex-col gap-4 text-gray-300">
                     <label className="flex items-center gap-2 cursor-pointer">
                         <input 
                             type="radio" 

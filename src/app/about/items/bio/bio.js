@@ -1,4 +1,4 @@
-'use client'; // Directiva necesaria para usar hooks de React como useState
+'use client'; // 👈 Directiva necesaria para usar hooks de React
 import React from 'react'
 import Image from 'next/image'
 import {FaUser, FaCode, FaTools} from '@/components/Icon'

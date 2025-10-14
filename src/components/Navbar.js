@@ -1,4 +1,4 @@
-'use client';
+'use client'; // 👈 Directiva necesaria para usar hooks de React
 
 // 1. Importaciones
 import Link from 'next/link';

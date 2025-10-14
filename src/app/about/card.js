@@ -1,4 +1,4 @@
-"use client"; // 👈 ¡Esta es la directiva mágica!
+"use client"; // 👈 Directiva necesaria para usar hooks de React
 import React from 'react'
 import Image from 'next/image'
 import Link from "next/link";
@@ -13,6 +13,7 @@ const CVRoute = '/docs/CV.pdf'
 export default function AboutCard() {
   return (
     <div className="text-center">
+        {/* Photo Profile */}
         <div className='mx-auto rounded-full w-40 h-40 relative overflow-hidden mt-7 md:h-52 md:w-52 ring-4 ring-gray-300 shadow-lg shadow-black hover:ring-blue-500 transition duration-200'>
             <Image fill src={ImgUser} alt="Photo-Profile" sizes="(max-width: 1024px) 100vw, (max-width: 1024px) 100vw" className="object-cover rounded-full" />
         </div>
@@ -24,23 +25,30 @@ export default function AboutCard() {
                     strings:["Data Scientist","PC Builder", "Photographer"], changeDelay:5, changeDeleteSpeed:2, autoStart: true, loop:true
                 }} />
             </div>
+            {/* Recent Company in job */}
             <p className='text-gray-800 dark:text-gray-200'>💼 Adeodato</p>
         </div>        
 
-        <div className='flex space-x-3 pt-5'> 
-            <a href="https://call.whatsapp.com/voice/eVjRmhsyYb3C4dlMVJJnFF" className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0"><FaWhatsapp className='inline-flex items-center'/> Contact Me</span>
+        <div className='flex space-x-3 pt-5'>
+            {/* Button "Contact Me" */}
+            <a href="https://call.whatsapp.com/voice/eVjRmhsyYb3C4dlMVJJnFF" className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0 group-hover:text-white">
+                    <FaWhatsapp className='inline-flex items-center'/> Contact Me
+                </span>
             </a>
-            <Link href={CVRoute} download className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">                              
-                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
-                <FontAwesomeIcon icon={faDownload} className="h-6 w-6" /> Resume </span>
+
+            {/* Button "Resume" */}
+            <Link href={CVRoute} download className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0 group-hover:text-white">
+                    <FontAwesomeIcon icon={faDownload} className="h-6 w-6" /> Resume
+                </span>
             </Link>
         </div>
 
         <div>
             <h4 className="pt-4 pb-2 text-md font-semibold  text-blue-800 dark:text-white">Follow Me on:</h4>
         </div>
-        
+        {/* Social Links */}
         <div className='flex justify-between space-x-3 pt-6 text-2xl '>
             <a className=' dark:text-white hover:text-[lightskyblue] transition duration-200' href="mailto:darwin_garcia@me.com"><FontAwesomeIcon icon={faEnvelope} className="h-6 w-6" /></a>
             <a className=' dark:text-white hover:text-[dodgerblue] transition duration-200 ' href="https://www.facebook.com/idarwingarcia"><FaFacebookSquare/></a>

@@ -1,4 +1,4 @@
-"use client"
+"use client"; // 👈 Directiva necesaria para usar hooks de React
 import Link from "next/link";
 import { useState } from 'react';
 import Typewriter from "typewriter-effect"

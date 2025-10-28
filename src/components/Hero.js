@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook} from "@fortawesome/free-solid-svg-icons";
 import ParticleCanvas from "./ParticleCanvas";
 
-const ImgUser = '/images/profile/Profile1.jpg'
+const ImgUser = '/images/profile/user.png'
 
 export default function Hero() {
     const [theme, setTheme] = useState('dark');

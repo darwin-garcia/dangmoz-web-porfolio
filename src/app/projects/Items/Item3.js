@@ -12,7 +12,7 @@ export default function ProjectItem3() {
     <article className="bg-white flex flex-col max-w-lg mx-auto rounded-lg shadow-xl dark:bg-gray-700 mb-5 align-middle hover:scale-110 transition duration-300 ease-in-out ">
             {/* Contenido del proyecto (Square) */}
             <div className="relative w-full aspect-square opacity-50 cursor-pointer filter grayscale hover:grayscale-0 blur-sm hover:blur-none hover:opacity-100 transition duration-300 ease-in-out">
-                <a href="https://github.com/darwin-garcia">
+                <a href="https://github.com/darwin-garcia/laptop-sales-data">
                     {/* Imagen del Proyecto */}
                     <Image
                         src={ProjectImg1}

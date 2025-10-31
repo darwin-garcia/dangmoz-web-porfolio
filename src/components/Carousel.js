@@ -5,11 +5,9 @@ import Image from 'next/image';
 
 // Arreglo con las rutas de tus imágenes
 const images = [
-    '/images/bio/01.jpg',
-    '/images/bio/02.jpg',
-    '/images/bio/03.jpg',
-    '/images/bio/04.jpg',
-    '/images/bio/05.jpg',
+    '/images/bio/1.jpg',
+    '/images/bio/2.jpg',
+    '/images/bio/3.jpg',
 ];
 
 const Carousel = () => {
@@ -90,5 +88,6 @@ const Carousel = () => {
         </div>
     );
 };
+
 
 export default Carousel;

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faMapPin, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp, faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
-const ImgUser = '/images/profile/Profile1.jpg'
+const ImgUser = '/images/profile/1755223532651.jpg'
 const CVRoute = '/docs/CV.pdf'
 
 export default function CVPage() {
@@ -173,4 +173,5 @@ export default function CVPage() {
       </div>
     </main>
   );
+
 }

@@ -12,6 +12,8 @@ const Home = '/';
 const About = '/about';
 const Projects = '/projects';
 const Education = '/education';
+const Experience = '/experience';
+const Services = '/services';
 const Contact = '/contact';
 
 const Navbar = () => {
@@ -43,7 +45,9 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-6">
           <Link href={About} className="hover:text-blue-500 dark:hover:text-gray-500 duration-200 drop-shadow-md">About</Link>
           <Link href={Projects} className="hover:text-blue-500 dark:hover:text-gray-500 duration-200 drop-shadow-md">Projects</Link>
+          <Link href={Services} className="hover:text-blue-500 dark:hover:text-gray-500 duration-200 drop-shadow-md">Services</Link>
           <Link href={Education} className="hover:text-blue-500 dark:hover:text-gray-500 duration-200 drop-shadow-md">Education</Link>
+          <Link href={Experience} className="hover:text-blue-500 dark:hover:text-gray-500 duration-200 drop-shadow-md">Experience</Link>
           <Link href={Contact} className="hover:text-blue-500 dark:hover:text-gray-500 duration-200 drop-shadow-md">Contact</Link>
         </div>
       </div>
@@ -58,7 +62,9 @@ const Navbar = () => {
         <div className="mt-4">
           <Link href={About} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700" onClick={() => setIsOpen(false)}>About</Link>
           <Link href={Projects} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700" onClick={() => setIsOpen(false)}>Projects</Link>
+          <Link href={Services} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700" onClick={() => setIsOpen(false)}>Services</Link>
           <Link href={Education} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700" onClick={() => setIsOpen(false)}>Education</Link>
+          <Link href={Experience} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700" onClick={() => setIsOpen(false)}>Experience</Link>
           <Link href={Contact} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700" onClick={() => setIsOpen(false)}>Contact</Link>
         </div>
       </div>

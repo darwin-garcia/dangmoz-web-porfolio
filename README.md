@@ -1,4 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Dummy Website. Example for Data Scientist and Data Engineering Portfolio
+
+<p>🌐 <a href="https://www.darwin-garcia.com"> WebSite Official</a></p>
 <img width="1920" height="1080" alt="Web Portfolio" src="https://github.com/user-attachments/assets/2c6df7fd-dbd3-42e9-8cc4-545e92476637" />
 
 <img width="1920" height="1080" alt="about" src="https://github.com/user-attachments/assets/5e351307-d4e4-4896-956e-415aa8de98c3" />

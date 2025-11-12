@@ -46,9 +46,9 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-6">
           {/* Ajuste de Hover para escritorio */}
           <Link href={About} className="hover:text-blue-600 dark:hover:text-blue-400">About</Link>
-          {/* <Link href={Services} className="hover:text-blue-600 dark:hover:text-blue-400">Services</Link>*/}
+          <Link href={Services} className="hover:text-blue-600 dark:hover:text-blue-400">Services</Link>
           <Link href={Projects} className="hover:text-blue-600 dark:hover:text-blue-400">Projects</Link>
-          {/* <Link href={Experience} className="hover:text-blue-600 dark:hover:text-blue-400">Experience</Link>*/}
+          <Link href={Experience} className="hover:text-blue-600 dark:hover:text-blue-400">Experience</Link>
           <Link href={Education} className="hover:text-blue-600 dark:hover:text-blue-400">Education</Link>
           <Link href={Contact} className="hover:text-blue-600 dark:hover:text-blue-400">Contact</Link>
         </div>
@@ -59,9 +59,9 @@ const Navbar = () => {
         <div className="md:hidden mt-4 bg-white dark:bg-slate-900/90 shadow-lg border-t border-gray-200 dark:border-slate-700">
           {/* Ajuste de Hover para móvil (fondo) */}
           <Link href={About} className="block py-2 px-4 text-sm text-slate-800 dark:text-white hover:bg-gray-100 dark:hover:bg-slate-800" onClick={() => setIsOpen(false)}>About</Link>
-          {/* <Link href={Services} className="block py-2 px-4 text-sm text-slate-800 dark:text-white hover:bg-gray-100 dark:hover:bg-slate-800" onClick={() => setIsOpen(false)}>Services</Link>*/}
+          <Link href={Services} className="block py-2 px-4 text-sm text-slate-800 dark:text-white hover:bg-gray-100 dark:hover:bg-slate-800" onClick={() => setIsOpen(false)}>Services</Link>
           <Link href={Projects} className="block py-2 px-4 text-sm text-slate-800 dark:text-white hover:bg-gray-100 dark:hover:bg-slate-800" onClick={() => setIsOpen(false)}>Projects</Link>
-          {/* <Link href={Experience} className="block py-2 px-4 text-sm text-slate-800 dark:text-white hover:bg-gray-100 dark:hover:bg-slate-800" onClick={() => setIsOpen(false)}>Experience</Link>*/}
+          <Link href={Experience} className="block py-2 px-4 text-sm text-slate-800 dark:text-white hover:bg-gray-100 dark:hover:bg-slate-800" onClick={() => setIsOpen(false)}>Experience</Link>
           <Link href={Education} className="block py-2 px-4 text-sm text-slate-800 dark:text-white hover:bg-gray-100 dark:hover:bg-slate-800" onClick={() => setIsOpen(false)}>Education</Link>
           <Link href={Contact} className="block py-2 px-4 text-sm text-slate-800 dark:text-white hover:bg-gray-100 dark:hover:bg-slate-800" onClick={() => setIsOpen(false)}>Contact</Link>
         </div>

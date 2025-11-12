@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarAlt, faEnvelope, faDownload} from '@fortawesome/free-solid-svg-icons';
 import {FaFacebookSquare, FaGithub, FaInstagram, FaTiktok, FaLinkedin, FaTwitter, FaYoutube, FaWhatsapp }from '@/components/Icon';
 
-const ImgUser = "/images/profile/Profile1.jpg"
+const ImgUser = "/images/profile/1755223532651.jpg"
 const CVRoute = '/docs/CV.pdf'
 
 export default function AboutCard() {
@@ -53,4 +53,5 @@ export default function AboutCard() {
 
     </div>
   );
+
 }

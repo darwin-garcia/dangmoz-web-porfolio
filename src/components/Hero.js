@@ -37,25 +37,25 @@ export default function Hero() {
             
         <div className='relative overflow-hidden max-w-[650px] text-white flex flex-col gap-[40px] '>
             <div>                
-                <h1 className='text-5xl hover:text-[lightskyblue] transition duration-200 drop-shadow-lg shadow-black'>Darwin Garcia</h1>
-                <h4 className='text-2xl hover:text-[lavender] transition duration-200 mt-3 drop-shadow-lg shadow-black'>
+                <h1 className='text-5xl text-gray-800 dark:text-white hover:text-[lightskyblue] transition duration-200 drop-shadow-lg shadow-black'>Darwin Garcia</h1>
+                <h4 className='text-2xl text-gray-800 dark:text-white hover:text-[lavender] transition duration-200 mt-3 drop-shadow-lg shadow-black'>
                     <Typewriter options={{
                         strings:["Data Scientist","PC Builder", "Photographer"], changeDelay:5, changeDeleteSpeed:2, autoStart: true, loop:true
                     }} />
                 </h4>
             </div>
 
-            <div className='bg-[#fff] h-[2px] w-[auto] drop-shadow-lg shadow-black'></div>
+            <div className='bg-[#000] dark:bg-[#fff] h-[2px] w-[auto] drop-shadow-lg shadow-black'></div>
 
             <div>
-                <p>¡Hello! Welcome to my website!</p>
+                <p className="text-gray-800 dark:text-white">¡Hello! Welcome to my website!</p>
             </div>
 
             <div>           
-                <p>👨‍💻 Here begins my story. </p>                
+                <p className="text-gray-800 dark:text-white">👨‍💻 Here begins my story. </p>                
             </div>
             <div>
-                <Link href="/cv" className="bg-blue-500 text-gray-800 dark:text-white font-bold py-2 px-4 rounded inline-flex items-center border border-blue-100 hover:bg-green-600 transition duration-200">
+                <Link href="/cv" className="bg-blue-500 text-gray-100 dark:text-white font-bold py-2 px-4 rounded inline-flex items-center border border-blue-100 hover:bg-green-600 transition duration-200">
                     <FontAwesomeIcon icon = {faBook} className="text-xl" /> Read More.
                 </Link>
             </div>   

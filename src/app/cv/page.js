@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faMapPin, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp, faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
-const ImgUser = '/images/profile/1755223532651.jpg'
+const ImgUser = '/images/profile/Profile1.jpg'
 const CVRoute = '/docs/CV.pdf'
 
 export default function CVPage() {
@@ -37,7 +37,7 @@ export default function CVPage() {
             <Link
               href={CVRoute}
               download
-              className="inline-block mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-red-700 transition-colors"
+              className="inline-block mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors"
             >
               <FontAwesomeIcon icon = {faDownload} className="text-xl" /> Download PDF
             </Link>
@@ -48,9 +48,6 @@ export default function CVPage() {
               <li><FontAwesomeIcon icon = {faWhatsapp} className="text-md" /> 3104600220</li>
               <li><FontAwesomeIcon icon = {faEnvelope} className="text-md" /> darwin_garcia@me.com</li>
               <li><FontAwesomeIcon icon = {faMapPin} className="text-md" /> Bogota (Colombia)</li>
-              <li>
-                <a href="https://www.linkedin.com/in/darwingarc%C3%ADa/" className="hover:text-blue-500 transition-colors mr-2"><FontAwesomeIcon icon = {faLinkedin} className="text-lg" /></a> 
-                <a href="https://github.com/darwin-garcia" className="hover:text-gray-500 transition-colors mr-2"><FontAwesomeIcon icon = {faGithub} className="text-lg"/></a></li>
             </ul>
           </section>
           {/* Sección habilidades en la columna izquierda */}
@@ -84,11 +81,13 @@ export default function CVPage() {
             </ul>
           </section>
         </aside>
-         {/* --- COLUMNA DERECHA (70%) --- */}
+
+        {/* --- COLUMNA DERECHA (70%) --- */}
         {/*
           - Ocupa toda la fila en móviles.
           - En pantallas md y superiores: ocupa 2 de las 3 columnas (col-span-2)
         */}
+
         <div className="md:col-span-2">
           {/* Sección Perfil Profesional */}
           <section className="mb-10">
@@ -101,7 +100,6 @@ export default function CVPage() {
               </p>
             </div>
           </section>
-
           {/* Sección experiencia */}
           <section className="mb-10">
             <h2 className="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">
@@ -117,14 +115,8 @@ export default function CVPage() {
               </div>              
             </div>
           </section>
-
           {/* Sección educación */}
-          {/*
-            CORRECCIÓN: Aquí cambiamos "md-10" por "mb-10".
-            "mb-10" es una clase de Tailwind CSS que aplica un margen en la parte inferior (margin-bottom).
-            Esto asegura que haya un espacio consistente después de esta sección.
-          */}
-          <section className="mb-10">
+          <section className="mb-10"> {/* CAMBIO REALIZADO AQUÍ: md-10 A mb-10 */}
             <h2 className="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">
               Education
             </h2>
@@ -139,12 +131,7 @@ export default function CVPage() {
               </ul>
             </div>            
           </section>
-
           {/* Sección Proyectos */}
-          {/*
-            DOCUMENTACIÓN: La clase "mb-10" también se usa aquí para mantener
-            la consistencia en el espaciado vertical entre todas las secciones.
-          */}
           <section className="mb-10">
             <h2 className="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">
               Projects
@@ -173,5 +160,4 @@ export default function CVPage() {
       </div>
     </main>
   );
-
 }

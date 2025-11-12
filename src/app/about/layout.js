@@ -1,6 +1,6 @@
 import AboutNav from "@/components/AboutNavbar";
 
-// ✅ Metadata aquí.
+// ✅ PASO 1: Mueve el objeto metadata aquí.
 // Este archivo es un Server Component por defecto, por lo que esto funciona.
 export const metadata = {
   title: "| Darwin Garcia | About Me",

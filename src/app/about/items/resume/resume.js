@@ -7,14 +7,10 @@ const ExpImg = "/images/about/trofeo.png"
 const ClientImg = "/images/about/cara-feliz.png"
 const ProjectImg = "/images/about/proyecto.png"
 const CVRoute = '/cv'
-const RootImage = "/images/about/lambda-stack-software.png"
 
 export default function AboutResume() {
-  return (    
-    <div className="pt-2 pb-2">
-      <div className='relative w-4/5 h-64 mx-auto md:h-96 md:w-96'>
-        <Image src={RootImage} layout='fill' alt="lambda" className='object-contain'/>    
-      </div>
+  return (
+    <div className="pt-2 pb-2">        
         <h3 className='pt-2 pb-2 text-2xl text-black dark:text-white'> Hello! I am Darwin Garcia</h3>
         <p className="pt-2">Welcome to my site!. </p>
         <p className="pt-2">👷‍♂️ I am a creative, organised and self-taught person, I usually research topics of interest, study them and put them into practice. I like to solve problems through data, using tools to obtain information with a focus on results. 
@@ -23,7 +19,7 @@ export default function AboutResume() {
         <p className="pt-2">🙌 Thank you for visiting my profile!</p>        
         <div className='grid justify-center pt-3 pb-3'>
             <Link href={CVRoute}
-              className="bg-blue-500 text-gray-800 dark:text-white font-bold py-2 px-4 rounded inline-flex items-center border border-blue-300 no-underline hover:bg-red-600 transition duration-200 hover:underline">
+              className="bg-blue-500 text-gray-100 dark:text-white font-bold py-2 px-4 rounded inline-flex items-center border border-blue-300 no-underline hover:bg-red-600 transition duration-200 hover:underline">
               <FontAwesomeIcon icon={faDownload} className="h-6 w-6" />
               <span>Download Resume</span>
             </Link>

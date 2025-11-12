@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload} from '@fortawesome/free-solid-svg-icons';
-
+import Carousel from '@/components/Carousel';
 
 const ExpImg = "/images/about/trofeo.png"
 const ClientImg = "/images/about/cara-feliz.png"
@@ -10,6 +10,7 @@ const ProjectImg = "/images/about/proyecto.png"
 export default function AboutResume() {
   return (
     <div>
+        <Carousel/>
         <h3 className='pt-2 pb-2 text-2xl text-black dark:text-white'> Hello! I am Darwin Garcia</h3>
         <p>Welcome to my site!. </p>
         <p>👷‍♂️ I am a creative, organised and self-taught person, I usually research topics of interest, study them and put them into practice. I like to solve problems through data, using tools to obtain information with a focus on results. 
@@ -17,7 +18,7 @@ export default function AboutResume() {
         <p>I am looking for opportunities to be part of an IT team in a company where I can grow professionally and contribute with my acquired skills.</p>
         <p>🙌 Thank you for visiting my profile!</p>        
         <div className='grid justify-center pt-3 pb-3'>
-            <a href="https://drive.google.com/file/d/1pDgw9jBR-dFZXHsJk-RF3UzBHQ7t_UNc/view?usp=sharing" className="bg-blue-500 text-gray-800 dark:text-white font-bold py-2 px-4 rounded inline-flex items-center border border-blue-300 no-underline hover:bg-red-600 transition duration-200 hover:underline">
+            <a href="https://drive.google.com/file/d/1pDgw9jBR-dFZXHsJk-RF3UzBHQ7t_UNc/view?usp=sharing" className="bg-blue-500 text-gray-100 dark:text-white font-bold py-2 px-4 rounded inline-flex items-center border border-blue-300 no-underline hover:bg-red-600 transition duration-200 hover:underline">
               <FontAwesomeIcon icon={faDownload} className="h-6 w-6" />
               <span>Download Resume</span>
             </a>

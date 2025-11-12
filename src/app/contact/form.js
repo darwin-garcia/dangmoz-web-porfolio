@@ -16,10 +16,22 @@ const ContactForm = () => {
     setContactMethod(event.target.value);
   };
 
+  // Clases comunes para los campos de texto, ajustadas para modo claro y oscuro
+  const inputClass = "w-full py-3 px-4 rounded-xl outline-none group resize-none h-48 " +
+                     "bg-white text-gray-900 " + // ESTILOS CLAROS PREDETERMINADOS (Modo Claro)
+                     "dark:bg-[#343434] dark:text-gray-100"; // ESTILOS OSCUROS (Modo Oscuro)
+
+  // Clases del contenedor principal (manteniendo el fondo blanco en modo claro)
+  const articleClass = "register flex flex-col rounded-lg bg-white dark:bg-transparent";
+
+  // Clases del texto de radio buttons (oscuro en claro, claro en oscuro)
+  const labelTextClass = "text-gray-700 dark:text-gray-300";
+
   return (
-    <article className="register flex flex-col rounded-lg">
+    // Aplicamos la clase del artículo
+    <article className={articleClass}> 
         <div className="p-8">
-            <h1 className="text-6xl text-black dark:text-white font-medium mb-2">
+            <h1 className="text-6xl text-black dark:text-white font-medium mb-2"> 
                 Contact Me<span className="text-blue-300">.</span>
             </h1>
                         
@@ -33,16 +45,18 @@ const ContactForm = () => {
 
             <form className="mt-8" action='/'>
                 <div className="max-w-lg mb-4 flex flex-col md:flex-row items-center justify-between gap-4">
+                    {/* Aplicamos la nueva clase de entrada */}
                     <input type="text" autoComplete="off"
-                     className="w-full py-3 px-4 rounded-xl outline-none bg-[#343434] text-gray-100 group" placeholder="First Name" />
+                     className={inputClass.replace(" resize-none h-48", "")} placeholder="First Name" />
 
                     <input type="text" autoComplete="off"
-                     className="w-full py-3 px-4 rounded-xl outline-none bg-[#343434] text-gray-100 group" placeholder="Surname" />
+                     className={inputClass.replace(" resize-none h-48", "")} placeholder="Surname" />
                 </div>
 
                 <div className="max-w-lg mb-4">
+                    {/* Aplicamos la nueva clase al select */}
                     <select 
-                     className="w-full py-3 px-4 rounded-xl outline-none bg-[#343434] text-gray-100 group"
+                     className={inputClass.replace(" resize-none h-48", "")} // El select usa las mismas clases, quitando las de textarea
                      defaultValue="">
                         <option value="" disabled>Select your country.</option>
                         {countries.map((country, index) => (
@@ -52,25 +66,25 @@ const ContactForm = () => {
                 </div>
 
                 <div className="max-w-lg mb-4">
+                    {/* Aplicamos la nueva clase de entrada */}
                     <input type="email" autoComplete="off"
-                     className="w-full py-3 px-4 rounded-xl outline-none bg-[#343434] text-gray-100 group" placeholder="e-mail"/>
+                     className={inputClass.replace(" resize-none h-48", "")} placeholder="e-mail"/>
                 </div>
 
                 <div className="max-w-lg mb-4">
+                    {/* Aplicamos la nueva clase de entrada (con las propiedades de textarea) */}
                     <textarea type="text" autoComplete="off"
-                     className="w-full py-3 px-4 rounded-xl outline-none bg-[#343434] text-gray-100 group resize-none h-48" placeholder="Subject."/>
+                     className={inputClass} placeholder="Subject."/>
                 </div>
 
                 <div className="max-w-lg flex justify-center md:justify-center mb-6">
-                    <p className="text-gray-500 font-medium">
+                    <p className="text-gray-700 dark:text-gray-500 font-medium">
                       How would you like to be contacted?
                     </p>                                
                 </div>
                 
-                {/* --- SECCIÓN MODIFICADA DE RADIO BUTTONS --- */}
-                {/* Cambiamos 'grid grid-cols-2' por 'flex flex-col' para apilarlos verticalmente */}
-                <div className="max-w-lg mb-4 flex flex-col gap-4 text-gray-300">
-                    <label className="flex items-center gap-2 cursor-pointer">
+                <div className="max-w-lg mb-4 flex flex-col gap-4">
+                    <label className={`flex items-center gap-2 cursor-pointer ${labelTextClass}`}>
                         <input 
                             type="radio" 
                             name="contactOption" 
@@ -81,7 +95,7 @@ const ContactForm = () => {
                         />
                         Whatsapp
                     </label>
-                    <label className="flex items-center gap-2 cursor-pointer">
+                    <label className={`flex items-center gap-2 cursor-pointer ${labelTextClass}`}>
                         <input 
                             type="radio" 
                             name="contactOption" 
@@ -92,7 +106,7 @@ const ContactForm = () => {
                         />
                         Telegram
                     </label>
-                    <label className="flex items-center gap-2 cursor-pointer">
+                    <label className={`flex items-center gap-2 cursor-pointer ${labelTextClass}`}>
                         <input 
                             type="radio" 
                             name="contactOption" 
@@ -103,7 +117,7 @@ const ContactForm = () => {
                         />
                         e-mail
                     </label>
-                    <label className="flex items-center gap-2 cursor-pointer">
+                    <label className={`flex items-center gap-2 cursor-pointer ${labelTextClass}`}>
                         <input 
                             type="radio" 
                             name="contactOption" 
@@ -112,7 +126,7 @@ const ContactForm = () => {
                             checked={contactMethod === 'llamada'}
                             onChange={handleContactChange}
                         />
-                        Llamada
+                        Phone
                     </label>
                 </div>
 
